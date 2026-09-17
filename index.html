@@ -253,11 +253,7 @@
         <span class="badge ok">免费版可用</span>
         <span class="badge">离线可写 · 登录即同步</span>
       </div>
-      <div class="cta">
-        <a class="btn btn-win" href="#" data-dl="win">🖥 下载 Windows 版<span class="btn-meta" id="heroWinSize"></span></a>
-        <a class="btn btn-apk" href="#" data-dl="apk">📱 下载 Android 版<span class="btn-meta" id="heroApkSize"></span></a>
-      </div>
-      <p class="cta-hint" id="ctaHint">Windows 免安装解压即用 · 安卓 APK 直装 · 手机号验证码登录，无需密码</p>
+      
     </div>
 
     <div class="mock">
@@ -319,7 +315,71 @@
     </div>
   </header>
 
+<!-- ================= 下载 ================= -->
+  <section id="download">
+    <h2>下载客户端 <span class="tag">两个客户端任选</span></h2>
+    <p class="desc">
+      电脑端与手机端登录同一账号，内容自动互通。安装包由部署方服务器直接分发，无需跳转网盘。
+    </p>
 
+    <div class="latest">
+      <div class="latest-head">
+        <div class="ver">v<span class="js-ver">1.0.0</span></div>
+        <div class="latest-meta">稳定版 · 更新于 <span id="buildDate">—</span></div>
+      </div>
+
+      <div class="dl-grid">
+        <!-- Windows -->
+        <div class="dl-card" id="cardWin">
+          <span class="cur">当前系统</span>
+          <div class="dl-top">
+            <span class="dl-ico win">🖥</span>
+            <div>
+              <div class="dl-name">Windows 电脑端</div>
+              <div class="dl-sub">免安装 zip · Windows 10 及以上</div>
+            </div>
+          </div>
+          <p class="dl-spec" id="winSpec">
+            <span class="fileSize" data-file="lingnote-windows.zip">正在获取安装包信息…</span><br />
+            解压后双击 <code>lingnote.exe</code> 即可运行，无需安装、不留残留。
+          </p>
+          <div class="dl-actions">
+            <a class="btn btn-win" href="#" data-dl="win">下载 Windows 版</a>
+            <button class="btn btn-ghost btn-sm" data-copy="win" type="button">复制链接</button>
+          </div>
+        </div>
+
+        <!-- Android -->
+        <div class="dl-card" id="cardApk">
+          <span class="cur">当前设备</span>
+          <div class="dl-top">
+            <span class="dl-ico apk">📱</span>
+            <div>
+              <div class="dl-name">Android 手机端</div>
+              <div class="dl-sub">APK 安装包 · Android 7.0 及以上</div>
+            </div>
+          </div>
+          <p class="dl-spec" id="apkSpec">
+            <span class="fileSize" data-file="lingnote.apk">正在获取安装包信息…</span><br />
+            支持相册选图、拍照插入，随时随地记录灵感。
+          </p>
+          <div class="dl-actions">
+            <a class="btn btn-apk" href="#" data-dl="apk">下载 Android 版</a>
+            <button class="btn btn-ghost btn-sm" data-copy="apk" type="button">复制链接</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="web-line">
+        <span>不想装客户端？</span>
+        <a class="btn btn-ghost btn-sm" id="btnWeb" href="#">在浏览器里直接打开网页版 →</a>
+      </div>
+
+      <div class="note-wx" id="wxNote">
+        <b>提示：</b>在微信内打开本页时，微信会拦截安装包下载（系统安全策略，无法绕过）。请点击右上角「···」→「<strong>在浏览器打开</strong>」，再点下载按钮即可正常安装。
+      </div>
+    </div>
+  </section>
 
   <!-- ================= 特性 ================= -->
   <section id="features">
